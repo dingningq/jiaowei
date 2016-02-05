@@ -2,92 +2,59 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <link rel="stylesheet" href="index.css
-    "/>
-    <title></title>
+    <link rel="stylesheet" href="index.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 </head>
 <body>
-<div id="main">
-    <ul id="list">
-        <li class="zIndex">
-            <div class="a1">
-                <div>
-                    <p>曾经做为前端开发的你</p>
-                    <p>解决PC兼容性而焦头烂额</p>
+    <div id="main">
+        <ul id="list">
+            <li class="zIndex">
+                <div class="a1">
+                    <div>
+                        <p>曾经做为前端开发的你</p>
+                        <p>解决PC兼容性而焦头烂额</p>
+                    </div>
+                    <div>
+                        <p>而今</p>
+                        <p>移动端H5应用疯狂来袭</p>
+                    </div>
+                    <div>
+                        <p>你是否已准备充分</p>
+                        <p>学习新技能</p>
+                    </div>
+                    <div>
+                        <p>曾破茧成蝶、重获新生？</p>
+                    </div>
+
+
                 </div>
-                <div>
-                    <p>而今</p>
-                    <p>移动端H5应用疯狂来袭</p>
+
+            </li>
+            <li>
+                <div class="a2">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
                 </div>
-                <div>
-                    <p>你是否已准备充分</p>
-                    <p>学习新技能</p>
+
+
+            </li>
+            <li>
+                <div class="a3"></div>
+            </li>
+            <li>
+                <div class="a4">
+                    <p>transform translate scale skew rotate transform-origin transform-style:preserve-3d perspective animation keyframes transition rotateX rotateY rotateZ </p>
+                    <p>transform translate scale skew rotate transform-origin transform-style:preserve-3d perspective animation keyframes transition rotateX rotateY rotateZ </p>
+                    <p>transform translate scale skew rotate transform-origin transform-style:preserve-3d perspective animation keyframes transition rotateX rotateY rotateZ </p>
                 </div>
-                <div>
-                    <p>曾破茧成蝶、重获新生？</p>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="a2">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-        </li>
-        <li>
-            <div class="a3"></div>
-        </li>
-        <li>
-            <div class="a4">
-                <p>transform translate scale skew rotate transform-origin transform-style:preserve-3d perspective animation keyframes transition rotateX rotateY rotateZ </p>
-                <p>transform translate scale skew rotate transform-origin transform-style:preserve-3d perspective animation keyframes transition rotateX rotateY rotateZ </p>
-                <p>transform translate scale skew rotate transform-origin transform-style:preserve-3d perspective animation keyframes transition rotateX rotateY rotateZ </p>
-            </div>
-        </li>
-    </ul>
-</div>
-<div id="btn" class="move">
+            </li>
+        </ul>
 
-</div>
-<audio src="images/11.mp3"  loop preload="none" id="audio1"></audio>
-
-<!--<audio id="audio1">
-    <source src="images/11.mp3" type="audio/mpeg"/>
-    <source src="images/11.ogg" type="audio/ogg"/>
-    <source src="images/11.wav" type="audio/wav"/>
-    your browser is not support audio~~
-
-</audio>-->
-<script src="index.js"></script>
-<script type="text/javascript">
-    window.onload=function(){
-        var oAudio=document.querySelector("#audio1")
-        var oBtn=document.querySelector("#btn");
-
-        //canplay监听音频文件是否可以播放
-        //canplaythrough:监听音频文件是否可以播放 （资源已经加载完成，播放过程中不会出现卡顿）
-        oAudio.addEventListener("canplay",function(){
-            oBtn.style.display="block";
-            oBtn.className="move";
-        },false)//监听一个事件
-        oAudio.play();//让当前的音频文件播放
-        oBtn.onclick=function(){
-
-            if(oAudio.paused){ //当前的音频处于暂停状态
-                oAudio.play();
-                this.className="move";
-            }else{
-                oAudio.pause(); //暂停
-                this.className=null;
-            }
-        }
-    }
-</script>
+    </div>
 </body>
 </html>
+<script src="index.js"></script>

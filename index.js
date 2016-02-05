@@ -51,13 +51,13 @@ function move(e){
 function end(e){
     if(this.flag){ //为了区分是点击事件还是触摸事件
         oLis[this.prevSIndex].style.webkitTransform = "translate(0,0)";
-oLis[this.prevSIndex].style.webkitTransition = "0.5s ease-out";
-oLis[this.prevSIndex].addEventListener("webkitTransitionEnd",function(e){
-    if(e.target.tagName =="LI"){
-        this.style.webkitTransition = "";
+        oLis[this.prevSIndex].style.webkitTransition = "0.5s ease-out";
+        oLis[this.prevSIndex].addEventListener("webkitTransitionEnd",function(e){
+            if(e.target.tagName =="LI"){
+                this.style.webkitTransition = "";
+            }
+            this.firstElementChild.id="a"+(this.index+1);
+        },false)
     }
-    this.firstElementChild.id="a"+(this.index+1);
-},false)
-}
 
 }
